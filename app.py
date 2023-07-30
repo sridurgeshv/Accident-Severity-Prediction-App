@@ -3,10 +3,11 @@ import pandas as pd
 import numpy as np
 import sklearn
 import streamlit as st
-import joblib
 import matplotlib
-from IPython import get_ipython
 from PIL import Image
+
+# import joblib
+import joblib
 
 # load the encoder and model object
 model = joblib.load("rta_model_deploy3.joblib")
@@ -56,8 +57,8 @@ def main():
     with st.form("road_traffic_severity_form"):
        st.subheader("Please enter the following inputs:")
         
-       No_vehicles = st.slider("Number of vehicles involved:",1,7, value=0, format="%d")
-       No_casualties = st.slider("Number of casualties:",1,8, value=0, format="%d")
+       No_vehicles = st.slider("Number of vehicles involved:", 1, 7, value=3, format="%d")
+       No_casualties = st.slider("Number of casualties:", 1, 8, value=2, format="%d")
        Hour = st.slider("Hour of the day:", 0, 23, value=0, format="%d")
        collision = st.selectbox("Type of collision:",options=options_types_collision)
        Age_band = st.selectbox("Driver age group?:", options=options_age)
