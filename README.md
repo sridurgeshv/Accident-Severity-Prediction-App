@@ -6,7 +6,7 @@
 <p>This repository hosts an Accident Severity Prediction App designed to provide insights into the potential severity of accidents based on various input parameters. You can test the application by accessing it <a href="https://model-prediction.streamlit.app" target="_blank">here</a>.</p>
 
 <h2>Overview</h2>
-<p>The Accident Severity Prediction App utilizes machine learning models trained on historical accident data to predict the severity of accidents. By inputting specific features such as weather conditions, road type, and time of day, users can receive predictions regarding the severity of potential accidents.</p>
+<p>The Accident Severity Prediction App utilizes machine learning models trained on historical accident data to predict the severity of accidents. By inputting specific features such as Number of vehicles involved, Number of casualties, and time of day,and other, users can receive predictions regarding the severity of potential accidents.</p>
 
 <h2>Features</h2>
 <ul>
@@ -23,7 +23,7 @@
   </li>
   <li>
     <h2>Input Parameters:</h2>
-    <p>Enter relevant details such as weather conditions, road type, and time to generate predictions.</p>
+    <p>Enter relevant details such as Number of vehicles, casualties, and time to generate predictions.</p>
   </li>
   <li>
     <h2>View Prediction:</h2>
